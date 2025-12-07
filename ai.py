@@ -6,8 +6,6 @@ Contains:
 - A tiny from-scratch MLP + behavior cloning trainer that can learn
   to imitate human player steering & throttle.
 
-This is intentionally educational: not production-grade RL, but enough
-to showcase ML + systems thinking in a single project.
 """
 
 from __future__ import annotations

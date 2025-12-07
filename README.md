@@ -19,8 +19,6 @@
 - **Modular architecture** across multiple files (`car.py`, `physics.py`, `ai.py`, `track.py`, `game.py`, `settings.py`).
 - **Data‑driven tuning** via a single `settings.py` file for all game parameters.
 
-This project is designed to look and feel like something you’d see on a strong student / early‑career SWE / ML portfolio.
-
 ---
 
 ## 🧱 Project Structure
@@ -118,8 +116,6 @@ Then use the **arrow keys**:
   - Medium angle → partial throttle.
   - Large angle → low throttle, brake if going fast.
 
-This gives you a reasonably clean, deterministic opponent without any ML.
-
 ### MLP Policy (`MLPPolicy`) + Behavior Cloning
 
 - Input features (`extract_features` in `ai.py`):
@@ -173,32 +169,6 @@ This makes the AI stable early on while still letting the learned policy influen
 - Each car’s world position is projected onto the nearest segment to get
   **distance‑along‑track**.
 - Lap counting uses a circular **start/finish region** around the first waypoint.
-
----
-
-## 🧪 Ideas for Extensions
-
-Some natural next steps you (or a recruiter reading your repo) could imagine:
-
-- Add **ghost laps** / best‑lap replay.
-- Implement **checkpoints** and off‑track penalty detection.
-- Train separate policies for **aggressive** vs **defensive** AI drivers.
-- Add **camera follow** logic and simple **UI menus**.
-- Export human driving logs to `.npz` and train offline with more advanced ML frameworks.
-
-Documenting these ideas in the README shows that you’re thinking beyond the minimum.
-
----
-
-## 📸 Screenshots / Demo GIF
-
-You can add screenshots or gifs here after you record them, for example:
-
-```markdown
-![Gameplay GIF](docs/demo.gif)
-```
-
-This section is intentionally left as a placeholder for your visuals.
 
 ---
 
